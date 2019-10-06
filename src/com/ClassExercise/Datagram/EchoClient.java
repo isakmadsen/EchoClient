@@ -15,7 +15,7 @@ public class EchoClient {
         try (Socket socket= new Socket(host, port)){
             PrintWriter output = new PrintWriter(socket.getOutputStream(), true);
             BufferedReader input = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            System.out.println("Successfully connected to server. Enter your message and write EXIT when youre done commnunicating");
+            System.out.println("Successfully connected to server. Enter your message and write EXIT when you're done goofing around");
             Scanner sc = new Scanner(System.in);
 
             String line = null;

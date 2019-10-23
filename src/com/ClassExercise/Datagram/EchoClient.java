@@ -24,12 +24,12 @@ public class EchoClient {
                 line = sc.nextLine();
                 output.println(line);
                 output.flush();
-                System.out.println("Echo from server " + input.readLine());
+                System.out.println("Echo from server: " + input.readLine());
             }
 
     sc.close();
         } catch (IOException ie){
-            System.out.println("Something happened, please try again");
+            System.out.println("Server not running. Please ensure server is running.");
             ie.printStackTrace();
         }
     }
